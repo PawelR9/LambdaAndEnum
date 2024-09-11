@@ -4,8 +4,8 @@ public class Main {
         IAdd<Integer> intAdder = (a, b) -> a + b;
         System.out.println(intAdder.add(2, 3));
 
-        IAdd<Double> doubleDivider = (a, b) -> a / b;
-        System.out.println(doubleDivider.add(7.21, 10.28));
+        IAdd<Double> doubleAdder = (a, b) -> a / b;
+        System.out.println(doubleAdder.add(7.21, 10.28));
 
         ITransformer<String, String> toUpperCase = input -> input.toUpperCase();
         System.out.println(toUpperCase.transform("Solvd practical lesson"));
